@@ -2,13 +2,13 @@
 Django noJS
 ==============
 
-Simple application to plug to manage "javascript disabled" browser
+Simple application to plug to manage "javascript disabled" events
 
 
 Installation
 ------------
 
-Add :mod:`nojs` to your :setting:`INSTALLED_APPS`::
+Add `nojs` to your `INSTALLED_APPS`::
 
     INSTALLED_APPS = (
             ...,
@@ -16,7 +16,7 @@ Add :mod:`nojs` to your :setting:`INSTALLED_APPS`::
             'nojs',
         )
 
-Add `django.core.context_processors.request` to your :setting:`TEMPLATE_CONTEXT_PROCESSORS`::
+Add `django.core.context_processors.request` and `django.core.context_processors.static` to your `TEMPLATE_CONTEXT_PROCESSORS`::
 
     TEMPLATE_CONTEXT_PROCESSORS = ("django.contrib.auth.context_processors.auth",
                                "django.core.context_processors.debug",
@@ -30,6 +30,8 @@ Into your templates::
 
     <link href="{{ STATIC_URL }}nojs/nojs.css" rel="stylesheet" type="text/css" media="screen" />
 
+    <body>
     {% checkjs %}
+    </body>
 
     
