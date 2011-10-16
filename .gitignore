@@ -1,0 +1,4 @@
+*.pyc
+django_nojs.egg-info
+dist
+.idea
