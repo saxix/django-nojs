@@ -1,0 +1,20 @@
+{% extends "nojs/nojs.html" %}
+{% load staticfiles %}
+{% block instructions %}
+<table border="0" cellspacing="8" width="790">
+    <tbody>
+    <td valign="top"><b>Safari</b>
+        <ol>
+            <li>Select the "Preferences..." menu item in the "Edit" menu.</li>
+            <li>Click on the "Security" icon displayed at the top of the window that pops up. </li>
+            <li>Select the checkbox marked "Enable Javascript". </li>
+            <li>Close the Security window. </li>
+            <li>Click <a href="{{ pagefrom }}">here</a> to go back to the start page</li>
+        </ol>
+    </td>
+    <td align="center" valign="top">&nbsp;<br>
+        <a href="{% static "nojs/safari.jpg" %}"
+           target="_blank"><img alt="opera" src="{% static "nojs/opera.jpg" %}" height="150" border="0" width="150"><br>View full size</a></td>
+    </tr></tbody>
+</table>
+{% endblock instructions %}

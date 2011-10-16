@@ -1,0 +1,20 @@
+{% extends "nojs/nojs.html" %}
+{% load staticfiles %}
+{% block instructions %}
+<table border="0" cellspacing="8" width="790">
+    <tbody>
+    <td valign="top"><b>Opera</b>
+        <ol>
+            <li>Select the "Preferences..." menu item in the "Tools" menu.</li>
+            <li>Click on the "Advanced" tab at top and then on "Content" in the options on the left hand side.</li>
+            <li>On the right hand side select the checkbox marked "Enable Javascript".</li>
+            <li>Click on the "Ok" button at the bottom of the Preferences window.</li>
+            <li>Click <a href="{{ pagefrom }}">here</a> to go back to the start page</li>
+        </ol>
+    </td>
+    <td align="center" valign="top">&nbsp;<br>
+        <a href="{% static "nojs/opera.jpg" %}"
+           target="_blank"><img alt="opera" src="{% static "nojs/opera.jpg" %}" height="150" border="0" width="150"><br>View full size</a></td>
+    </tr></tbody>
+</table>
+{% endblock instructions %}

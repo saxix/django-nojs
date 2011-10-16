@@ -1,0 +1,11 @@
+#nojs-js-off{
+    border: 1px solid black;
+    padding: 15px 30px;
+    
+    font-size: 12pt;
+    background-color: #e6e6fa;
+    background-image:url('error.gif');
+    background-repeat:no-repeat;
+    /*background-attachment:fixed;*/
+    background-position:left center;
+}

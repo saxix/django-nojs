@@ -1,0 +1,25 @@
+{% extends "nojs/nojs.html" %}
+{% load staticfiles %}
+{% block instructions %}
+    <table border="0" cellspacing="8" width="790">
+        <tbody>
+        <td valign="top"><b>Internet Explorer</b>
+            <ol>
+                <li>Select the "Internet Options..." menu item in the "Tools" menu.</li>
+                <li>Click on the "Security" tab at the top of the Internet Options window that pops up.</li>
+                <li>From the list of zones at the top of the Security options select the internet icon.</li>
+                <li>Select the button near the bottom that reads "Custom Level".</li>
+                <li>In the new window that pops up, scroll down to the item that reads "Active Scripting".</li>
+                <li>Select the option marked "Enable".</li>
+                <li>Click on the "Ok" button at the bottom of the Security Settings window.</li>
+                <li>Click on the "Ok" button at the bottom of the Internet Options window.</li>
+                <li>Click <a href="{{ pagefrom }}">here</a> to go back to the start page</li>
+            </ol>
+        </td>
+        <td align="center" valign="top">&nbsp;<br>
+            <a href="{% static "nojs/ie.gif" %}"
+               target="_blank"><img alt="ie" src="{% static "nojs/ie.gif" %}" height="150" border="0" width="150">
+                <br>View full size</a></td>
+        </tr></tbody>
+    </table>
+{% endblock instructions %}

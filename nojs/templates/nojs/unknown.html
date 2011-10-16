@@ -1,0 +1,17 @@
+{% extends "nojs/nojs.html" %}
+{% load staticfiles %}
+{% block instructions %}
+    <table border="0" cellspacing="8" width="790">
+        <tbody>
+        <td valign="top"><b>Unwnown browser</b>
+            <ol>
+                <li>Apologize, we are not enable to manage your browser. </li>
+                <li>Your user agent string is: <b>{{ ua }}</b></li>
+                
+                <li>Click <a href="{{ pagefrom }}">here</a> to go back to the start page</li>
+            </ol>
+        </td>
+        <td align="center" valign="top"></td>
+        </tr></tbody>
+    </table>
+{% endblock instructions %}

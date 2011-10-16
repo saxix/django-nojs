@@ -1,0 +1,22 @@
+{% extends "nojs/nojs.html" %}
+{% load staticfiles %}
+{% block instructions %}
+    <table border="0" cellspacing="8" width="790">
+        <tbody>
+        <td valign="top"><b>Chome</b>
+            <ol>
+                <li>Select the "Options..." menu item in the "Tools" menu. </li>
+                <li>Click the "Under the hood" tab. </li>
+                <li>Click "Content settings..." button  </li>
+                <li>Click the "Javascript" tab</li>
+                <li>Select "Allow all sites to run JavaScript" option</li>
+                <li>Click <a href="{{ pagefrom }}">here</a> to go back to the start page</li>
+            </ol>
+        </td>
+        <td align="center" valign="top">&nbsp;<br>
+            <a href="{% static "nojs/chrome.png" %}"
+               target="_blank"><img alt="chrome" src="{% static "nojs/chrome.png" %}" height="150" border="0" width="150">
+                <br>View full size</a></td>
+        </tr></tbody>
+    </table>
+{% endblock instructions %}

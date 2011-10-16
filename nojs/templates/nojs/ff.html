@@ -1,0 +1,21 @@
+{% extends "nojs/nojs.html" %}
+{% load staticfiles %}
+{% block instructions %}
+    <table border="0" cellspacing="8" width="790">
+        <tbody>
+        <td valign="top"><b>Firefox</b>
+            <ol>
+                <li>Select the "Options..." menu item in the "Tools" menu. </li>
+                <li>Click on the "Content" icon displayed at the top of the Options window that pops up. </li>
+                <li>On the left hand side select the checkbox marked "Enable Javascript". </li>
+                <li>Click on the "Ok" button at the bottom of the Options window. </li>
+                <li>Click <a href="{{ pagefrom }}">here</a> to go back to the start page</li>
+            </ol>
+        </td>
+        <td align="center" valign="top">&nbsp;<br>
+            <a href="{% static "nojs/ff.jpg" %}"
+               target="_blank"><img alt="ie" src="{% static "nojs/ff.jpg" %}" height="150" border="0" width="150">
+                <br>View full size</a></td>
+        </tr></tbody>
+    </table>
+{% endblock instructions %}
